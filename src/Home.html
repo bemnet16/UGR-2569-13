@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HilinaPoultry | Home</title>
+</head>
+<body>
+
+    <header>
+        <img src="Image\logo.png" alt="cook's picture for logo">
+        <h1> <span> Hilina </span> Poultry</h1>
+    </header>
+
+    <nav class="navigator">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbt"> <p>drop down menu</p>
+        <svg width="27px" height="28px">
+            <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
+            <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+        </svg>
+        </label>
+        
+        <ul class="nav">
+            <li><a id="current">HOME</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="Product.html">PRODUCT</a></li>
+            <li><a href="Menu.html">MENU</a></li>
+            <li><a href="Review.html">REVIEW</a></li>
+            <li><a href="Contact.html">CONTACT</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <div class="description">
+        <h2>Stay Up-To-Date</h2>
+        <p id="text">
+            Via our awesome website we try to keep you up to date with the latest Services, news and reviews in our industry. We post our production, available product with current prices to inform customers up-to-date!  
+        </p>
+        <button id="get-product"><a href="Product.html">See Products</a></button>
+    </div>
+
+    <div id="vedio">
+
+        <p>
+           <a rel="transcript" for="vedio-1" title="English transcript" href="#text-1">Transcript</a> 
+        </p>
+        <video controls id="vedio-1">
+            <source src="Video\video 1.mp4" type="video/mp4">
+            <source src="Video\video 1.ogg" type="video/ogg">
+            <track label="English" kind="subtitles" srclang="en" src="Video\captions.vtt" default />
+            <track label="English" kind="captions" srclang="en" src="Video\captions.vtt" >
+            your browser doesn't support such video.
+        </video>
+
+        <transcript id="text-1">
+            <p>Poultry or chicken production is keep chickens intentionaly to produce egg and chicken meat.</p>
+        </transcript>
+    </div>
+
+     <div id="moto">
+        <p>We try to afford best services to fulfill customers demand and let them to be satisfied. <span>It becomes real with you!</span> </p>
+     </div>
+
+    <hr id="break-line">
+
+    <footer>
+        <p><span>&copy;</span> 2022 Copyright <span>HilinaPoultry.com</span> All Rights Reserved. All other trademarks and copyrights are the property of their respective holders.</p>
+    </footer>
+</body>
+</html>
