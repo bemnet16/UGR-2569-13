@@ -1,0 +1,641 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*This is css style for header and navigator*/
+.header{
+    height: 130px;
+    color: rgba(59, 45, 45, 0.8);
+    background-color:rgb(255, 255, 255);
+    padding-top: 10px;
+    line-height: 5em;
+    font-size: x-large;
+    text-align: center;
+    border-bottom: 1px solid rgb(240, 236, 236);
+}
+.header--logo{
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    float: left;
+    margin-left: 1.5em;
+}
+@media (max-width:512px) {
+    .header{
+        font-size: large;
+    }
+    .header--logo{
+        width: 3rem;
+        height: 3rem;
+        margin-top: 1rem;
+    }
+}
+.header--style{
+    color: orangered;
+}
+.navigator--link{
+    color: rgb(42, 34, 34);
+    text-decoration: none;
+}
+.navigator__list .navigator__list--current{
+    color: rgb(255, 70, 2);
+}
+.navigator{
+    height: 70px;
+    width: 100%;
+    margin-bottom: 3rem;
+    background: #ffffff;
+    font-weight: 550;
+    border-bottom: 1px solid rgb(237, 231, 230);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.navigator--input,.navigator__lable, .navigator__lable--text{
+    display: none;
+}
+.navigator__list{
+    float: right;
+    margin-right:20px;
+}
+.navigator__list--listItem{
+    display: inline-block;
+    line-height: 5rem;
+}
+.navigator--link{
+    color: #344d4e;
+    font-size:14px;
+    text-transform:uppercase;
+    border-radius: 3px;
+    padding: 7px 13px;
+}
+.navigator--link:active , .navigator--link:hover{
+    background: #18d3a8;
+    color: #ddfabc;
+    transition: .25s;
+}
+.navigator__label{
+    float: right;
+    margin:30px 10px 0 0;
+    cursor: pointer;
+    display: none;
+}
+        /*This is css style for Home page */
+.home{
+    background-image: url("Image/Home back.png") ;
+    background-position: center center;
+    background-size: cover;
+    height: fit-content;
+    margin: 2rem 0 10rem;
+    padding: 5rem 1rem;
+    text-align: center;
+}
+.home--heading{
+    color: rgb(74, 6, 6);
+    font-size: 4rem;
+    margin:2rem 0 3rem 1rem;
+    float: left;
+}
+.home__text{
+    font-size: 1.5rem;
+    color: rgb(15, 54, 7);
+    text-shadow: .5px .5px .5px rgb(117, 111, 111);
+    clear: both;
+    font-family: "Exo 2","Segoe UI","Helvetica Neue",Arial,sans-serif; ;
+}
+.home__getbtn{
+    background-color: rgb(243, 68, 4);
+    padding: 1em 2em;
+    margin-top: 15vh;
+    border: none;
+    border-radius: 1.5em;
+    font-weight: 600;
+}
+.home__getbtn .home--link{
+    color: rgb(35, 36, 86);
+    text-decoration: none;
+    font-size: large;
+}
+.home__getbtn:hover{
+    background-color: rgb(228, 61, 0);
+    cursor: pointer;
+    scale: 1.03;
+}
+.watch{
+    box-shadow: 1px 1px 2px 2px rgb(237, 231, 231);
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+}
+.watch__video{
+    width: 80%;
+    height: 60%;
+    z-index: 1;
+}
+.watch__transcript--link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(192, 133, 23);
+}
+.watch__transcript--link:hover{
+    color: rgb(139, 99, 23);
+    text-decoration: underline;
+}
+.watch__transcript{
+    color: #906a39;
+    display: none;
+}
+.moto{
+    margin-left: 1rem;
+    color: #3d2507;
+    font-weight: bold;
+}
+.moto--future{
+    color: rgb(156, 19, 65);
+}
+@media (max-width:610px) {
+    .home--heading {
+        font-size: 2.5rem;
+        margin: 2rem 0 3rem 1rem;
+    }
+    .home__text {
+        font-size: 1rem;
+        text-shadow: .2px .2px .2px rgb(157, 152, 152);
+    }
+}
+        /*This is css style for about page */
+.about{
+    font-family: "Alegreya Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    color: #4b4b4b;
+    text-align: justify;
+    margin: 2rem 1rem 14rem;
+    font-size: large;
+}
+.about--pic{
+    width: 40vw;
+    float: left;
+    margin-right: 1em;
+    box-shadow: -1px -1px 3px 1px rgb(233, 226, 226);
+}
+.about__heading{
+    text-align: center;
+    font-size: 3rem;
+    color: #0092b4;
+    margin-bottom: 2.5rem;
+}
+.about__text--color{
+    color: rgb(98, 9, 58);
+}
+.audio{
+    margin-left: 2rem;
+}
+.audio__transcript--link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(192, 133, 23);
+    margin-left: 4rem;
+}
+.audio__transcript--link:hover {
+    color: rgb(139, 99, 23);
+    text-decoration: underline;
+}
+.audio__transcript {
+    color: #906a39;
+    display: none;
+}
+.use{
+    color: #3d2507;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem;
+    margin: 1rem auto;
+}
+@media (max-width:674px) {
+    .about{
+        margin-bottom: 5rem;
+        font-size: medium;    
+    }
+    .about--pic{
+        width: 100%;
+        margin: 2px auto;
+    }
+}
+        /*This is css style for product page*/
+.product{
+    font-family: "Alegreya Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.product__content{
+    width: 60vw;
+    padding: 5px;
+    font-size: large;
+    text-align: justify;
+    text-indent: 2rem;
+    color: #4b4b4b;
+}
+.product__content--name{
+    text-align: center;
+    color: #028cab;
+    font-size: xx-large;
+}
+.product__content > *{
+    margin-bottom: 1rem;
+}
+.product__table {
+    color: #246051;
+    border-collapse:collapse;
+    width: 80%;
+    margin: 2rem auto 2rem;
+  }
+.product__table--head, .product__table--cell {
+    text-align: left;
+    padding: 8px;
+  }
+.product__table--row:nth-child(even){background-color: rgb(232, 227, 227)}
+.product__table--head {
+    background-color: #1e7c5a;
+    color: white;
+  }
+.product__table--row:hover {
+    background-color: rgb(242, 204, 191);
+}
+.product__picture{
+    width:35vw;
+    margin-top: 5rem;
+    margin-right: 2.2rem;
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px  rgb(193, 185, 185);
+}
+        /*This is css style for menu page */
+.menu{
+    display: grid;
+    grid-template-columns:auto auto ;
+}
+.menu__section{
+    width: 37vw;
+    height: fit-content;
+    margin: 2em 4em;
+    padding: 5rem 1rem;
+    text-align: center;
+    border-radius: 50px;
+    background-image: linear-gradient(to right,rgb(189, 207, 216),rgb(246, 238, 182),rgb(211, 252, 220),rgb(194, 219, 222));
+    box-shadow: 1px 1px 3px 1.5px rgb(164, 189, 190);
+}
+.menu__section--type{
+    color: #177e95;
+}
+.menu__section--price{
+    color: #5d810a;
+}
+.menu__section--pic{
+    width:120px;
+    height: 120px;
+    border-radius: 50%;
+}
+        /*This is css style for review */
+.request{
+    font-family: 'Ubuntu', sans-serif;
+    color: #027058;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+.review{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.review__items{
+    width: 28vw;
+    margin: 2em 1em;
+    text-align: center;
+    padding: 1.5rem 1rem 3.5rem;
+    background-color: rgb(133, 164, 181);
+    box-shadow: 1px 1px 3px 1px rgb(165, 187, 196);
+    border-top-left-radius: 35px;
+    border-right:4px solid white;
+    border-bottom:3px solid white;
+}
+.review__items--feedback{
+    padding: 5px;
+    margin: .5rem auto;
+}
+.review__items:nth-of-type(even){
+    display: none;
+}
+.review__items--pic{
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.review__items--star{
+    color: rgb(171, 14, 14);
+    display: inline-block;
+}
+.load{
+    color: rgb(35, 36, 86);
+    background-color: orangered;
+    width: 22%;
+    padding: 15px 5px;
+    margin: 3em 39%;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+}
+.load:hover{
+    scale: 1.05;
+    background-color: rgb(230, 63, 3);
+    cursor: pointer;
+}
+        /*This is css style for contact page */
+.mapouter{position:relative;text-align:right;width:400px;height:500px;}
+.gmap__canvas {overflow:hidden;background:none!important;width:400px;height:500px;}
+.gmap__iframe {width:400px!important;height:500px!important;}
+@media (max-width:712px) {
+ .mapouter {width: 350px;height: 400px;}
+ .gmap__canvas {width: 350px; height: 400px;}
+}
+@media (max-width:572px) {
+    .mapouter { width: 250px; height: 300px;}
+    .gmap__canvas {width: 250px;height: 300px;}
+}
+.contact{
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    margin-top: 1.5em;
+}
+.contact__container {
+    height:fit-content;
+    width: 70%;
+    padding: .5em;
+    margin-right: 1rem;
+    border-radius: 30px;
+    background-color: #c0dde4;
+    box-shadow: 1px 1px 3px 1px rgb(155, 180, 183);
+}
+.contact--heading{
+    padding: 10px;
+    font-size: 2rem;
+    text-align: center;
+    color: #0e6d83;
+}
+.contact__info{
+    font-size: x-large;
+    display: grid;
+    grid-template-columns: 13vw 30vw auto;
+    justify-content: center;
+    align-items: center;
+}
+.contact__info--input, .contact__info--message{
+    width: 30vw;
+    height: 55px;
+    margin-top: 1rem;
+    border: 1.5px solid rgba(221, 216, 216, 0.6);
+    border-radius: 5px;
+    padding-left: 70px;
+    font-size: 17px;
+    outline: none;
+}
+.contact__info > *:focus{
+    border:2px solid rgb(50, 138, 148);
+}
+.contact__info--message{height: 80px;}
+.contact--icon{
+    width: 30px;
+    height: 30px;
+    margin: 1em 0 0 -29vw;
+}
+.contact__socialmedia{
+    text-align: center;
+}
+.socialmedia--icon{
+    width: 40px;
+    height: 40px;
+    margin: 0 1em;
+}
+.message{
+    color: rgb(114, 34, 34);
+    text-align: center;
+}
+.message--highlight{
+    color: rgb(251, 7, 7);
+}
+.send{
+    color: rgb(35, 36, 86);
+    background-color: rgb(244, 67, 2);
+    width: 30%;
+    padding: 15px 2px;
+    margin: 2em 35%;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+}
+.send:hover{
+    scale: 1.05;
+    background-color: rgb(230, 63, 3);
+    cursor: pointer;
+}
+        /* This is css style for FAQ page */
+.ask-review{
+    text-align: center;
+    margin: 2rem 0;
+    color: #14788f;
+    font-weight: bold;
+}
+.questions__list{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2.5rem 3rem;
+    width: 60%;
+    margin:1rem auto;
+    box-shadow: 1px 1px 4px 1px rgb(216, 216, 216);
+}
+.questions__list--item{
+    font-family:'Ubuntu', sans-serif;
+    background-color: rgb(207, 241, 243);
+    box-shadow: 1px 1px 2px 1px rgb(237, 237, 237);
+    list-style: inside square;
+    padding: .5rem 1rem;
+    font-weight: bold;
+}
+.questions__list--answer{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 1rem;
+    font-weight: lighter;
+}
+.questions__list--btn{
+    rotate: 90deg;
+    padding: .4rem;
+    margin: .6rem;
+    float: right;    
+    border: none;
+    border-radius: 50%;
+    color: rgb(232, 71, 13);
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.questions__list--btn:hover{
+    color: white;
+    background-color:  rgb(232, 71, 13);
+}
+.questions__list--answer{
+    display: none;
+}
+    /*This is css style for footer elements */
+.break-line{
+    clear: both;
+    margin:3rem 0 0px;
+}
+.footer{
+    height: 10%;
+    background-color: rgba(59, 63, 66,0.4);
+    padding: 1.2rem;
+    color: #191b16;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footer__text--color{
+    color: rgb(163, 52, 11);
+    font-size: 1.3rem;
+}
+        /* Responsive at media */
+@media (max-width:879px) {
+    .navigator__lable{
+        display: block;
+        float: right;
+        cursor: pointer;
+        padding: 1rem;
+    }
+    .navigator__list {
+        position: absolute;
+        left: -100%;
+        top: 70px;
+        width: 8rem;
+        padding-bottom: 2rem;
+        height: fit-content;
+        background: #474545;
+        opacity: 0.94;
+        transition: all .5s;
+        border-radius: 0 30px 30px 0;
+    }
+    .navigator__list--listItem{
+        display: block;
+        line-height: 20px;
+        margin:1rem 0 0.5rem 1px;
+    }
+    .navigator--link{
+        font-weight: bold;
+        font-family: 'Ubuntu', sans-serif;
+        color: rgb(226, 255, 255);
+    }
+    .navigator--link:active , .navigator--link:hover{
+        background-color: #3fbff2;
+    }
+    .navigator--input:checked ~ .navigator__list{
+        left: 1px;
+    }
+    .navigator--input:checked~.navigator__lable{
+        rotate: 90deg;
+    }
+    .product{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .product__content{
+        width: 100%;
+        padding: 2px 5px;
+        margin: 5px auto 1px;
+        font-size: medium;
+    }
+    .product__content > *{
+        padding: 1px;
+        margin: 2px auto;
+    }
+    .product__picture{
+        width: 70%;
+        padding: 0 10%;
+        margin: 1px auto 50px;
+        box-shadow: none;
+    }
+    .product__table {
+        width: 90%;
+        font-size: medium;
+    }
+    .menu, .review{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    .menu__section, .review__items{
+        width: 60vw;
+        height: fit-content;
+    }
+    .contact__info--lable{
+        display: none;
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        text-align: center;
+    }
+    .contact > *{
+        padding:0 2rem;
+        margin: auto auto;
+    }
+    .contact__container{
+        width: 80%;
+        padding: 5px;
+    }
+    .contact__info--input,.contact__info--message {
+        width: 400%;
+        height: 50px;
+        margin-left: -1rem;
+        margin-top: 1rem;
+        border: 1.5px solid rgba(221, 216, 216, 0.6);
+        border-radius: 5px;
+        font-size: 15px;
+        padding-left: 40px;
+    }
+
+    .contact__info--message {
+        height: 60px;
+    }
+    .contact--icon {
+        width: 25px;
+        height: 25px;
+        margin: 1em 0 0 -54vw;
+    }
+    .send {
+        width: 50%;
+        margin: 2em 25%;
+    }
+    .questions__list {width: 90%;}
+}
+@media (max-height:340px) and (max-width:879px) {
+    .navigator {
+        visibility: hidden;
+        height: 0;}
+    .navigator__list {
+        visibility: visible;}
+    .navigator__lable {
+        visibility: visible;
+        position: fixed;
+        top: 2px;
+        right: 2px;
+    }
+    .navigator__list {
+        position: fixed;
+        left: -100%;
+        top: 5px;
+        width: 6rem;
+    }
+}
+
