@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HilinaPoultry | Home</title>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+<header class="container-fluid text-center row g-0 align-items-center border-bottom border-1 py-3">
+    <div class="col-1"></div>
+    <img class="col-1 gx-1 rounded-circle float-start" src="Image\logo.png" alt="cook's picture for logo">
+    <h1 class="col-9"> <span class="display-3 fw-bolder text-danger"> Hilina </span> Poultry</h1>
+    <div class="col-1"></div>
+</header>
+
+<nav class="container-fluid my-4 py-3 border-bottom border-1 bg-white sticky-top d-none d-md-block">
+    <div class="list-inline text-end text-decoration-none fw-bold">
+        <div class="list-inline-item"><a class="text-decoration-none link-danger">HOME</a></div>
+        <div class="list-inline-item"><a class="link-info text-body text-decoration-none" href="About.html">ABOUT</a></div>
+        <div class="list-inline-item"><a class="link-info text-body text-decoration-none" href="Product.html">PRODUCT</a></div>
+        <div class="list-inline-item"><a class="link-info text-body text-decoration-none" href="Menu.html">MENU</a></div>
+        <div class="list-inline-item"><a class="link-info text-body text-decoration-none" href="Review.html">REVIEW</a></div>
+        <div class="list-inline-item"><a class="link-info text-body text-decoration-none" href="Contact.html">CONTACT</a></div>
+        <div class="list-inline-item"><a class="link-info text-body text-decoration-none" href="FAQ.html">FAQ</a></div>
+    </div>
+</nav>
+
+<nav class="navbar navbar-dark  sticky-top d-md-none bg-white pb-3">
+    <div class="container-fluid">
+        <a class="navbar-brand  d-md-none">Hilina Poultry</a>
+        <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon p-3 bg-secondary"><p d-none>s</p></span>
+        </button>
+        <div class="offcanvas offcanvas-start text-bg-secondary" tabindex="-1" id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Hilina Poultry</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-start flex-grow-1 pe-3 ">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="About.html">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Product.html">PRODUCT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Menu.html">MENU</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Review.html">REVIEW</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contact.html">CONTACT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <div class="container-fluid text-center mb-5 mt-1 py-5" style="background-image: url('Image/Home back.png'); background-position: center center; background-size: cover;">
+        <h2 class="mb-5 py-2 display-4 fw-bold">Stay Up-To-Date</h2>
+        <p class="h4 fw-normal mb-5 pb-5">
+            Via our awesome website we try to keep you up to date with the latest Services, news and reviews in our industry. We post our production, available product with current prices to inform customers up-to-date!  
+        </p>
+        <button class="btn my-5 py-4"><a class=" py-3 rounded-5 btn btn-primary px-5" href="Product.html">See Products</a></button>
+    </div>
+
+    <div class="container-fluid text-center border border-light border-2 my-5 p-4" id="video">
+
+        <video controls class="container-fluid w-75 py-4">
+            <source src="Video\video 1.mp4" type="video/mp4">
+            <source src="Video\video 1.ogg" type="video/ogg">
+            <track label="English" kind="subtitles" srclang="en" src="Video\captions.vtt" default />
+            <track label="English" kind="captions" srclang="en" src="Video\captions.vtt" >
+            your browser doesn't support such video.
+        </video>
+        <p>
+           <a class="text-uppercase btn fw-bold link-danger" rel="transcript" for="vedio-1" title="English transcript" id="tra1" href="#text-1" onclick="transcriptVedio()">Transcript</a> 
+        </p>
+        
+        <transcript id="text-1">
+            <p>Poultry or chicken production is keep chickens intentionaly to produce egg and chicken meat.</p>
+        </transcript>
+    </div>
+
+     <div>
+        <p class="px-2 fw-bold">We try to afford best services to fulfill customers demand and let them to be satisfied. <span class="text-secondary">It becomes real with you!</span></p>
+     </div>
+    <hr>
+    <footer class="container-fluid bg-light text-center py-4">
+        <p><span class="h4 text-danger">&copy;</span> 2022 Copyright <span class="h4 text-danger">HilinaPoultry.com</span> All Rights Reserved. All other trademarks and copyrights are the property of their respective holders. </p>
+    </footer>
+
+
+    <script src="script\videoTra.js"></script>
+    <script src="bootstrap.js"></script>
+</body>
+</html>
